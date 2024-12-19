@@ -46,34 +46,10 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=update
 
- # Encrypted-Bank-Info-API
-This project is a backend application that manages user data and encrypted bank information using a Spring Boot REST API and CockroachDB as the database.
-# Features
-## User Management
- •  Create, retrieve,update, and delete user details
- •	User entity includes fields like firstName, lastName, email, and phoneNumber.
-## Bank Information Management:
- •	Create, retrieve, update, and delete bank information associated with a user.
-	•	Bank information includes fields like bankAccountNumber, bankName, and accountType.
-	•	All sensitive bank account data is encrypted and decrypted using AES encryption.
-# Used
-  •	Spring Boot
-	•	CockroachDB
-	•	AES Encryption
-	•	Java
-	•	PostgreSQLDialect
-	•	Spring Data JPA
- # Configuration 
- // application.properties 
-   spring.application.name=demo
-    spring.datasource.url=jdbc:postgresql://localhost:26257/backend_test?sslmode=disable
-    spring.datasource.username=root
-    spring.datasource.password=
-    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-    spring.jpa.show-sql=true
-spring.jpa.hibernate.ddl-auto=update
-## Database 
-  1.	Create the database:
+```
+# Database Setup
+
+1.	Create the database:
 
 CREATE DATABASE backend_test;
 
