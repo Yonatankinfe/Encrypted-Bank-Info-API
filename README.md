@@ -1,4 +1,52 @@
 # Encrypted-Bank-Info-API
+
+This project is a backend application that manages user data and encrypted bank information using a **Spring Boot REST API** and **CockroachDB** as the database.
+
+---
+
+## Features
+
+### User Management
+- Create, retrieve, update, and delete user details.
+- User entity includes fields like:
+  - `firstName`
+  - `lastName`
+  - `email`
+  - `phoneNumber`
+
+### Bank Information Management
+- Create, retrieve, update, and delete bank information associated with a user.
+- Bank information includes fields like:
+  - `bankAccountNumber` (encrypted)
+  - `bankName`
+  - `accountType`
+- All sensitive bank account data is encrypted and decrypted using **AES encryption**.
+
+---
+
+## Technologies Used
+- **Spring Boot**: For building RESTful APIs.
+- **CockroachDB**: As the database.
+- **AES Encryption**: For securing sensitive bank account details.
+- **Java**: Programming language.
+- **PostgreSQLDialect**: For JPA configuration.
+- **Spring Data JPA**: For database operations.
+
+---
+
+## Configuration
+
+### `application.properties`
+```properties
+spring.application.name=demo
+spring.datasource.url=jdbc:postgresql://localhost:26257/backend_test?sslmode=disable
+spring.datasource.username=root
+spring.datasource.password=
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+
+ # Encrypted-Bank-Info-API
 This project is a backend application that manages user data and encrypted bank information using a Spring Boot REST API and CockroachDB as the database.
 # Features
 ## User Management
