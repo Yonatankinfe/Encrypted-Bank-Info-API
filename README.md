@@ -82,10 +82,10 @@ Bank Information
 	•	Delete Bank Information: DELETE /users/{userId}/bank-information
 # Testing 
 {
-  "firstName": "John",
-  "lastName": "Doe",
-  "email": "john.doe@example.com",
-  "phoneNumber": "+1234567890"
+  "firstName": "Yonatan",
+  "lastName": "Kinfe ",
+  "email": "yonatankinfe@gmail.com",
+  "phoneNumber": "+251-1923-123-123"
 }
 
 ## Notes:
